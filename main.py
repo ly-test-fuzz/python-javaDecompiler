@@ -50,7 +50,7 @@ def collectAllJarToStoreLib(sourcePath, dstPath):
         os.mkdir(storeLibPath)
     commandFmt = "find {} -name \"*.jar\" -type f | xargs -I xx cp xx {}/"
     command = commandFmt.format(sourcePath , storeLibPath)
-    os.system(command)lujin
+    os.system(command)
 
 def removeSoureWar(sourcePath):
     commandFmt = "find {} -name \"*.war\" -type f | xargs -I xx rm -rf xx.folder"
